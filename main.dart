@@ -1,4 +1,4 @@
-import 'dart:html_common';
+
 
 void main() {
   // Lists
@@ -21,13 +21,14 @@ void main() {
   //Where
   //1. Write a function called `filterVisitors` that takes 2 arguments, a list of ages and a minimum age allowed to enter.
   // Return a list of all ages that are more than the minimum age.
-  List<dynamic> ages = [10, 7, 20 , 18, 23];
-  int minAge=7;
-  
+  List<dynamic> ages = [10, 7, 22 , 18, 24];
+  int minAge=20;
+  List<dynamic> filterVisitors = ages.where((ages) => ages > minAge).toList();
+  print(filterVisitors);
 
   //FirstWhere
   //1. Write a function called `findOdds` that takes a list of numbers and returns the first odd number.
-  List<int> findOdds = [];
+  //List<int> findOdds = [];
   //orElse
   //1. Use the `orElse` named arguement with `FirstWhere` to return a `0` if no `odd` number is found.
 }
